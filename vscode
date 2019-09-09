@@ -1,0 +1,18 @@
+Follow the next steps for install vscode:
+
+1. wget https://packagecloud.io/headmelted/codebuilds/gpgkey -O - | sudo apt-key add -
+
+2. curl -L https://code.headmelted.com/installers/apt.sh | sudo bash
+
+link vcscode:
+https://github.com/Microsoft/vscode
+
+
+UPGRATE AND UNINSTALL THE FAILING BUILD:
+
+1. sudo apt-get purge code-oss
+
+2. sudo apt-get install code-oss=1.29.0-15397002286
+
+3. sudo apt-mark hold code-oss  (Prevent Downgrade automatically)
+4. sudo apt-mark unhold code-oss (Undo the step 3)
